@@ -24,13 +24,15 @@
   how that data is handled.</p>
 
   <h2>What Google data is accessed</h2>
-  <p>Claude Sheets requests a single Google permission:</p>
+  <p>Claude Sheets requests two Google permissions:</p>
   <ul>
     <li><code>https://www.googleapis.com/auth/spreadsheets</code> — see, edit, create and
         delete the owner's Google Sheets spreadsheets.</li>
+    <li><code>https://www.googleapis.com/auth/script.projects.readonly</code> — view the
+        owner's Google Apps Script projects. Read-only: it cannot change a script.</li>
   </ul>
-  <p>The tool itself only reads cells, writes cells and adds rows. It contains no code to
-  delete spreadsheets or tabs, or to share them.</p>
+  <p>The tool itself only reads cells, writes cells, adds rows and reads script code. It
+  contains no code to delete spreadsheets or tabs, to share them, or to change a script.</p>
 
   <h2>How the data is used</h2>
   <p>Cells are read and written on demand, solely to carry out the owner's own requests about
