@@ -1,0 +1,4 @@
+{
+  "_read_me": "Htet edits this file by hand; the Sheets tool only reads it. List the spreadsheets the tool may WRITE to, by ID (the long string in the sheet's URL between /d/ and /edit). One entry of \"*\" means every sheet innyarr@gmail.com can edit. Empty list means nothing is writable. Changes apply on the next write, no restart needed.",
+  "spreadsheets": []
+}
