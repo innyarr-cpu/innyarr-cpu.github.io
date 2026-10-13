@@ -28,11 +28,14 @@
   <ul>
     <li><code>https://www.googleapis.com/auth/spreadsheets</code> — see, edit, create and
         delete the owner's Google Sheets spreadsheets.</li>
-    <li><code>https://www.googleapis.com/auth/script.projects.readonly</code> — view the
-        owner's Google Apps Script projects. Read-only: it cannot change a script.</li>
+    <li><code>https://www.googleapis.com/auth/script.projects</code> — view and update the
+        owner's Google Apps Script projects.</li>
   </ul>
-  <p>The tool itself only reads cells, writes cells, adds rows and reads script code. It
-  contains no code to delete spreadsheets or tabs, to share them, or to change a script.</p>
+  <p>The tool itself only reads cells, writes cells, adds rows, reads script code and updates
+  one script file at a time after the owner approves the change. Before each script update it
+  saves a version of the project and keeps a copy of the old code on the owner's computer. It
+  contains no code to delete spreadsheets, tabs or script files, to share them, or to deploy or
+  run a script.</p>
 
   <h2>How the data is used</h2>
   <p>Cells are read and written on demand, solely to carry out the owner's own requests about
@@ -68,7 +71,7 @@
   <p>Questions about this policy: <a href="mailto:innyarr@gmail.com">innyarr@gmail.com</a></p>
 
   <footer>
-    <p>Last updated: 4 October 2026</p>
+    <p>Last updated: 14 October 2026</p>
   </footer>
 </main>
 </body>
